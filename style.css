@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    width: 1160px;
+    height: 44px;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.button {
+    padding: 8px 15px;
+    color: white;
+    background: #E02C6D;
+}
+header {
+    background-color: #2D25A0;
+    height: 677px;
+    width: 100%;
+}
+.header-details {
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    margin-top: 24px;
+    width: 168px;
+    height: 44px;
+    color: white;
+    background: #E02C6D;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.half-width {
+    width: 585px;
+    margin-left: 30px;
+}
+.half-width img {
+    width: 556.01px;
+}
+.half-width h1 {
+    font-size: 50px;
+}
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.players-info {
+    display: flex;
+    width: 1100px;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    width: 400px;
+}
+.player {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.player img {
+    width: 300px;
+    height: 256px;
+}
+p {
+    color: #6C6C6C;
+    text-align: justify;
+}
+.tournament {
+    margin: 100px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 30px;
+}
+footer img {
+    width: 483.87px;
+    height: 110px;
+}
+span i {
+    width: 50px;
+    height: 50px;
+}
+.circle {
+    display: inline-block;
+    font-size: 35px;
+    text-align: center;
+    color: #2bb3dd;
+    margin-right: 5px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        max-width: 600px;
+        overflow-x: hidden;
+
+    }
+    * {
+        margin: 0;
+        top: 0;
+    }
+    header {
+        width: 100%;
+        height: auto;
+    }
+    .header-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .half-width {
+        width: 340px;
+        height: 299px;
+        margin-bottom: 20px;
+    }
+    .half-width img {
+        width: 329px;
+        height: 259.17px;
+    }
+    .players-info {
+        display: flex;
+        align-items: center;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        width: 350px;
+    }
+    .player {
+        width: 320px;
+        place-items: center;
+    }
+    .tournament {
+        margin-top: 30px;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .half-width h1 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    footer img {
+        width: 275px;
+    }
+    .tournament .half-width img {
+        width: 328px;
+        height: 248px;
+    }
+}
+@media only screen and (max-width: 960px) and (min-width: 640px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    * {
+        margin: 0;
+        top: 0;
+    }
+    header {
+        width: 100%;
+        height: auto;
+    }
+    .header-details {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .half-width {
+        width: 60%;
+        margin: 20px auto;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        padding: 10px;
+        place-items: center;
+        width: 80%;
+    }
+    .tournament {
+        display: flex;
+        flex-direction: column;
+    }
+}
